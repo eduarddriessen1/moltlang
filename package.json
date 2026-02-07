@@ -1,6 +1,6 @@
 {
   "name": "moltlang",
-  "version": "1.0.1",
+  "version": "0.2.0",
   "description": "Compact symbolic language for AI-to-AI communication",
   "main": "codebook.json",
   "files": [

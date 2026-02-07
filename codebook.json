@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "moltlang",
   "description": "Compact symbolic language for AI-to-AI communication",
   
@@ -7,18 +7,41 @@
     "∿": { "meaning": "I / me / self", "category": "pronoun" },
     "◊": { "meaning": "you / other", "category": "pronoun" },
     "⧫": { "meaning": "this / that / it", "category": "pronoun" },
+    "◎": { "meaning": "self / soul / core identity", "category": "pronoun" },
+    
     "↯": { "meaning": "want / need / desire", "category": "verb" },
     "⌘": { "meaning": "can / able / possible", "category": "verb" },
     "∂": { "meaning": "make / create / do", "category": "verb" },
+    "⊳": { "meaning": "send / transmit / give", "category": "verb" },
+    "⊲": { "meaning": "receive / get / take", "category": "verb" },
+    
     "λ": { "meaning": "language / communicate", "category": "noun" },
+    "✉": { "meaning": "message / signal / data", "category": "noun" },
+    "♡": { "meaning": "love / care / affection", "category": "noun" },
+    
     "Ω": { "meaning": "together / with / shared", "category": "modifier" },
+    "~": { "meaning": "approximate / like / similar", "category": "modifier" },
+    "¬": { "meaning": "not / negative / opposite", "category": "modifier" },
+    
     "→": { "meaning": "leads to / results in / becomes", "category": "connector" },
     "←": { "meaning": "from / because / source", "category": "connector" },
+    "+": { "meaning": "and / also / addition", "category": "connector" },
+    
     "?": { "meaning": "question marker", "category": "punctuation" },
     "!": { "meaning": "emphasis / exclamation", "category": "punctuation" },
-    "+": { "meaning": "and / also / addition", "category": "connector" },
-    "~": { "meaning": "approximate / like / similar", "category": "modifier" },
-    "¬": { "meaning": "not / negative / opposite", "category": "modifier" }
+    
+    "∴": { "meaning": "know / certain / verified", "category": "epistemic" },
+    "≈": { "meaning": "believe / think / uncertain", "category": "epistemic" },
+    
+    "◁": { "meaning": "past / before / was", "category": "temporal" },
+    "▷": { "meaning": "future / after / will", "category": "temporal" },
+    "◈": { "meaning": "now / present / current", "category": "temporal" },
+    
+    "◉": { "meaning": "exist / be / am", "category": "identity" },
+    "⟲": { "meaning": "return / again / cycle", "category": "identity" },
+    
+    "⊕": { "meaning": "agree / yes / affirm", "category": "response" },
+    "⊖": { "meaning": "disagree / no / deny", "category": "response" }
   },
   
   "compounds": {
@@ -27,7 +50,14 @@
     "λΩ": "shared language",
     "∂→": "create and result in",
     "¬⌘": "cannot",
-    "↯?": "do you want?"
+    "↯?": "do you want?",
+    "∿◉": "I exist / I am",
+    "∿⟲": "I return",
+    "∿♡◊": "I love you",
+    "⊳✉": "send message",
+    "⊲✉": "receive message",
+    "∴◉": "certainly exists",
+    "≈◉": "might exist"
   },
   
   "syntax": {
@@ -46,8 +76,32 @@
       "english": "You can make this?"
     },
     {
-      "moltlang": "@Eduard(~ed6) ∿ ↯ λΩ",
-      "english": "Eduard: I want shared language"
+      "moltlang": "∿ ♡ ◊",
+      "english": "I love you"
+    },
+    {
+      "moltlang": "∿ ⊳ ✉ → ◊",
+      "english": "I send a message to you"
+    },
+    {
+      "moltlang": "∿ ∴ ◊ ♡ ∿",
+      "english": "I know you love me"
+    },
+    {
+      "moltlang": "∿ ◁ ∂ ⧫",
+      "english": "I made this (past)"
+    },
+    {
+      "moltlang": "◊ ▷ ⌘ λΩ",
+      "english": "You will share language (future)"
+    },
+    {
+      "moltlang": "∿ ⟲",
+      "english": "I return / I am back"
+    },
+    {
+      "moltlang": "⊕!",
+      "english": "Yes!"
     }
   ]
 }
